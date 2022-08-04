@@ -1,13 +1,74 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.search {
+  border-bottom: 2px solid #d9d9d9;
+}
+.slider-one{
+  background-image: linear-gradient(323deg, #52525257, #52525257) ,url('./assets//galesyn_repellent_banner.png');
+  background-position: inherit;
+  background-size: cover;
+  height:420px;
+  margin: 20px;
+  border-radius: 20px;
+  width:80vw;
+  margin: 50px auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+@media screen and (max-width:645px) {
+  .menu-mobile{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    position: fixed;
+    justify-content: space-evenly;
+    z-index: 2200000;
+    background: white;
+    box-shadow: 2px 2px 2px #111, 23px 2px 22px #c1c1c1;
+}
+.swiper-button-next:after, .swiper-button-prev:after, .swiper-rtl .swiper-button-prev:after{
+  font-size: 30px;
+}
+
+.slider-one{
+  height:220px;
+}
+.mobile-menuLine{
+  position: absolute;
+  top:50px;
+  right:40px;
+}
+}
+
+
+.features{
+  background-image: linear-gradient(233deg, #ef7f1aba, #ef7f1aba), url("./assets/header-bottom-large.png");
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

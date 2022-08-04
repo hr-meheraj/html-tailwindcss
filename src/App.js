@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Headerbottom from "./components/Headerbottom";
+import HeaderTop from "./components/HeaderTop";
+import Navbar from "./components/Navbar";
+import SliderFeatures from "./components/SliderFeatures";
+import SlideTopFeatures from "./components/SlideTopFeatures";
+import Topbar from "./components/Topbar";
+import TopProductButton from "./components/TopProductButton";
+import TopProducts from "./components/TopProducts";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="mx-auto max-w-[1920px]">
+      <Topbar/>
+      <Navbar/>
+      <div className="py-2">
+        <HeaderTop/>
+        <Headerbottom/>
+        <SlideTopFeatures/>
+        <TopProducts/>
+        <TopProductButton/>
+        <SliderFeatures/>
+      </div>
     </div>
   );
 }
